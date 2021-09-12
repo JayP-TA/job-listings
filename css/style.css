@@ -31,6 +31,24 @@ img {
   display: block;
 }
 
+h1, h2, .info li {
+  font-family: var(--ff-accent);
+}
+
+h2 {
+  font-weight: 700;
+}
+
+header {
+  background-color: var(--clr-primary);
+}
+
+header img {
+  width: 100%;
+}
+
+
+
 .attribution {
   font-size: 11px;
   text-align: center;
