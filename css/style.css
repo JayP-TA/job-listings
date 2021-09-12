@@ -1,0 +1,38 @@
+:root {
+    --clr-primary: hsl(180, 29%, 50%);
+    --clr-background: hsl(180, 52%, 96%);
+    --clr-filter: hsl(180, 31%, 95%);
+    --clr-dark: hsl(180, 8%, 52%);
+    --clr-darker: hsl(180, 14%, 20%);
+
+    --ff-accent: "Spartan", serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
