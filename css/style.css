@@ -1,12 +1,12 @@
 :root {
-    --clr-primary: hsl(180, 29%, 50%);
-    --clr-background: hsl(180, 52%, 96%);
-    --clr-filter: hsl(180, 31%, 95%);
-    --clr-dark: hsl(180, 8%, 52%);
-    --clr-darker: hsl(180, 14%, 20%);
+  --clr-primary: hsl(180, 29%, 50%);
+  --clr-background: hsl(180, 52%, 96%);
+  --clr-filter: hsl(180, 31%, 95%);
+  --clr-dark: hsl(180, 8%, 52%);
+  --clr-darker: hsl(180, 14%, 20%);
 
-    --ff-primary: "Roboto", sans-serif;
-    --ff-accent: "Spartan", serif;
+  --ff-primary: "Roboto", sans-serif;
+  --ff-accent: "Spartan", serif;
 }
 
 /* Initialization */
@@ -22,8 +22,6 @@
   box-sizing: border-box;
 }
 
-
-
 img {
   max-width: 100%;
   display: block;
@@ -37,7 +35,9 @@ body {
   line-height: 1.6;
 }
 
-h1, h2, .info li {
+h1,
+h2,
+.info li {
   font-family: var(--ff-accent);
 }
 
@@ -59,18 +59,77 @@ header img {
 }
 
 main {
-  margin: 2em auto;
+  margin: 4em auto;
   width: min(90%, 80em);
 }
 
-/* Cards */
+/* =====
+   Cards
+   ===== */
 
 .card {
   background-color: #fff;
-  padding: 2em 0;
-  margin-bottom: 2em;
+  padding: 2em 2em;
+  margin-bottom: 3.5em;
+  border-radius: 3%;
+  position: relative;
 }
 
+/* Card image */
+.card img {
+  position: absolute;
+  top: -2em;
+  height: 4em;
+}
+
+
+.card h1 {
+  color: var(--clr-primary);
+  margin-right: 1.2em;
+  display: inline-block;
+  font-weight: 600;
+}
+
+.featured {
+  background: linear-gradient(
+    to right,
+    var(--clr-primary),
+    var(--clr-primary) 0.4em,
+    #fff 0.4em,
+    #fff
+  );
+}
+
+/* Card labels */
+.label {
+  color: #fff;
+  border-radius: 25px;
+  padding: 0.3em 0.7em;
+  margin-right: .3em;
+  text-transform: uppercase;
+  font-weight: 500;
+  display: inline-block;
+}
+
+.new {
+  background-color: var(--clr-primary);
+}
+
+.featured-label {
+  background-color: var(--clr-darker);
+}
+
+/* Card role */
+.card h2 {
+  margin-top: .7em;
+  font-size: 17px;
+}
+
+/* Role info */
+.card li {
+  color: var(--clr-dark);
+  display: inline-block;
+}
 .attribution {
   font-size: 11px;
   text-align: center;
