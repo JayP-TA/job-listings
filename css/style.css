@@ -104,7 +104,7 @@ main {
 .label {
   color: #fff;
   border-radius: 25px;
-  padding: 0.3em 0.7em;
+  padding: 0.4em 0.6em 0.3em;
   margin-right: .3em;
   text-transform: uppercase;
   font-weight: 500;
@@ -128,8 +128,23 @@ main {
 /* Role info */
 .card li {
   color: var(--clr-dark);
-  display: inline-block;
+  float: left;
+  margin-right: 1.3em;
 }
+
+.card :first-child {
+  list-style-type: none;
+}
+
+/* .card li:after {
+  content: " •";
+  font-size: 25px;
+}
+
+.card li:last-child:after {
+  content: "";
+} */
+
 .attribution {
   font-size: 11px;
   text-align: center;
