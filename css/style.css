@@ -69,10 +69,11 @@ main {
 
 .card {
   background-color: #fff;
-  padding: 2em 2em;
+  padding: 2em 2em 0;
   margin-bottom: 3.5em;
   border-radius: 3%;
   position: relative;
+  box-shadow: .5em .5em 2em rgba(0,0,0,.1)
 }
 
 /* Card image */
@@ -85,6 +86,7 @@ main {
 
 .card h1 {
   color: var(--clr-primary);
+  margin-top: .8em;
   margin-right: 1.2em;
   display: inline-block;
   font-weight: 600;
@@ -121,15 +123,23 @@ main {
 
 /* Card role */
 .card h2 {
-  margin-top: .7em;
+  margin-top: .4em;
   font-size: 17px;
 }
 
 /* Role info */
+.card ul {
+  margin-top: 1em;
+}
+
 .card li {
   color: var(--clr-dark);
   float: left;
   margin-right: 1.3em;
+}
+
+.card li:last-child {
+  margin-right: 0;
 }
 
 .card :first-child {
@@ -140,7 +150,7 @@ main {
 
 .tags-container {
   border-top: 1px solid var(--clr-dark);
-  margin-top: 2em;
+  margin-top: 4em;
   display: flex;
   justify-content:flex-start;
   flex-wrap: wrap;
@@ -150,10 +160,58 @@ main {
 .tags-container span {
   background-color: var(--clr-background);
   border-radius: 8%;
+  font-size: 15px;
+  font-family: var(--ff-accent);
+  font-weight: 600;
   color: var(--clr-primary);
   padding: .3em .5em;
-  margin: 0em 0.5em 1em 0;
+  margin: .3em 1.2em 1em 0;
 }
+
+/* Cards complexity */
+
+@media (min-width: 53em) {
+  .card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 2em 1em 1em;
+  }
+
+  .job-listing {
+    display: flex;
+    align-items: center;
+  }
+
+  .card img {
+    position: static;
+    display: block;
+    width: 8em;
+    height: auto;
+    margin: 1.5em
+  }
+
+  .info {
+    display: block;
+    min-width: 18em;
+  }
+
+  .card ul {
+    overflow: visible;
+  }
+
+  .tags-container {
+    border-top: none;
+    margin-top: 0;
+    align-items: center;
+    justify-content: right;
+  }
+
+  .tags-container span {
+    margin: 1em 0 1em 1em;
+  }
+}
+
 
 .attribution {
   font-size: 11px;
