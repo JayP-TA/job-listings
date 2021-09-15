@@ -1,306 +1,336 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-   <!-- displays site properly based on user's device -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!--Tab icon-->
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <!--Google Fonts-->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Spartan:wght@400;500;600;700&display=swap" rel="stylesheet"> 
-  <!--Stylesheet-->
-  <link rel="stylesheet" href="/css/style.css">
-  <!--Title-->
-  <title>Job Listings</title>
-</head>
-<body>
-  <header>
-    <img srcset="/images/bg-header-mobile.svg 375w, 
-                /images/bg-header-desktop.svg 1000w" 
-         sizes= "(max-width: 40em) 375px,
+  <head>
+    <meta charset="UTF-8" />
+    <!-- displays site properly based on user's device -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Tab icon-->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <!--FA Icons-->
+    <script
+      src="https://kit.fontawesome.com/c5ef3f9126.js"
+      crossorigin="anonymous"
+    ></script>
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&family=Spartan:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!--Stylesheet-->
+    <link rel="stylesheet" href="/css/style.css" />
+    <!--Title-->
+    <title>Job Listings</title>
+  </head>
+  <body>
+    <header>
+      <img
+        srcset="
+          /images/bg-header-mobile.svg   375w,
+          /images/bg-header-desktop.svg 1000w
+        "
+        sizes="(max-width: 40em) 375px,
                   1000px"
-         src=" /images/bg-header-mobile.svg" 
-         alt="header image">
-  </header>
-  <main>
-    <div class="card featured">
-      <!-- Item Start -->
-      <div class="job-listing">
-        <img src="/images/photosnap.svg" alt="photosnap logo">
-        <section class="info">
-          <h1>Photosnap</h1>
-          <mark class="label new">New!</mark>
-          <mark class="label featured-label">Featured</mark>
-          <h2>Senior Frontend Developer</h2>
-          <ul>
-            <li>1d ago</li>
-            <li>Full Time</li>
-            <li>USA only</li>
-          </ul>
-        </section>
+        src=" /images/bg-header-mobile.svg"
+        alt="header image"
+      />
+    </header>
+    <main>
+      <div class="filter-window">
+        <div class="filter">
+          <span>JavaScript</span><button><i class="fas fa-times"></i></button>
+          <span>CSS</span><button><i class="fas fa-times"></i></button>
+          <span>Frontend</span><button><i class="fas fa-times"></i></button>
+        </div>
+        <button>Clear</button>
       </div>
-      <div class="tags-container">
-        <!-- Role -->
-        <span class="tag">Frontend</span>
-        <!-- Level -->
-        <span class="tag">Senior</span>
-        <!-- Languages -->
-        <span class="tag">HTML</span>
-        <span class="tag">CSS</span>
-        <span class="tag">JavaScript</span>
+      <div class="card featured">
+        <!-- Item Start -->
+        <div class="job-listing">
+          <img src="/images/photosnap.svg" alt="photosnap logo" />
+          <section class="info">
+            <h1>Photosnap</h1>
+            <mark class="label new">New!</mark>
+            <mark class="label featured-label">Featured</mark>
+            <h2>Senior Frontend Developer</h2>
+            <ul>
+              <li>1d ago</li>
+              <li>Full Time</li>
+              <li>USA only</li>
+            </ul>
+          </section>
+        </div>
+        <div class="tags-container">
+          <!-- Role -->
+          <span class="tag">Frontend</span>
+          <!-- Level -->
+          <span class="tag">Senior</span>
+          <!-- Languages -->
+          <span class="tag">HTML</span>
+          <span class="tag">CSS</span>
+          <span class="tag">JavaScript</span>
+        </div>
+        <!-- Item End -->
       </div>
-      <!-- Item End -->
-    </div>
-    <div class="card featured">
-      <!-- Item Start -->
-      <div class="job-listing">
-        <img src="/images/manage.svg" alt="manage logo">
-        <section class="info">
-          <h1>Manage</h1>
-          <mark class="label new">New!</mark>
-          <mark class="label featured-label">Featured</mark>
-          <h2>Fullstack Developer</h2>
-          <ul>
-            <li>1d ago</li>
-            <li>Part Time</li>
-            <li>Remote</li>
-          </ul>
-        </section>
+      <div class="card featured">
+        <!-- Item Start -->
+        <div class="job-listing">
+          <img src="/images/manage.svg" alt="manage logo" />
+          <section class="info">
+            <h1>Manage</h1>
+            <mark class="label new">New!</mark>
+            <mark class="label featured-label">Featured</mark>
+            <h2>Fullstack Developer</h2>
+            <ul>
+              <li>1d ago</li>
+              <li>Part Time</li>
+              <li>Remote</li>
+            </ul>
+          </section>
+        </div>
+        <div class="tags-container">
+          <!-- Role -->
+          <span class="tag">Fullstack</span>
+          <!-- Level -->
+          <span class="tag">Midweight</span>
+          <!-- Languages -->
+          <span class="tag">Python</span>
+          <!-- Tools -->
+          <span class="tag">React</span>
+        </div>
+        <!-- Item End -->
       </div>
-      <div class="tags-container">
-        <!-- Role -->
-        <span class="tag">Fullstack</span>
-        <!-- Level -->
-        <span class="tag">Midweight</span>
-        <!-- Languages -->
-        <span class="tag">Python</span>
-        <!-- Tools -->
-        <span class="tag">React</span>
+      <div class="card">
+        <!-- Item Start -->
+        <div class="job-listing">
+          <img src="/images/account.svg" alt="account logo" />
+          <section class="info">
+            <h1>Account</h1>
+            <mark class="label new">New!</mark>
+            <h2>Junior Frontend Developer</h2>
+            <ul>
+              <li>2d ago</li>
+              <li>Part Time</li>
+              <li>USA only</li>
+            </ul>
+          </section>
+        </div>
+        <div class="tags-container">
+          <!-- Role -->
+          <span class="tag">Frontend</span>
+          <!-- Level -->
+          <span class="tag">Junior</span>
+          <!-- Languages -->
+          <span class="tag">React</span>
+          <!-- Tools -->
+          <span class="tag">Sass</span>
+          <span class="tag">JavaScript</span>
+        </div>
+        <!-- Item End -->
       </div>
-      <!-- Item End -->
-    </div>
-    <div class="card">
-      <!-- Item Start -->
-      <div class="job-listing">
-        <img src="/images/account.svg" alt="account logo">
-        <section class="info">
-          <h1>Account</h1>
-          <mark class="label new">New!</mark>
-          <h2>Junior Frontend Developer</h2>
-          <ul>
-            <li>2d ago</li>
-            <li>Part Time</li>
-            <li>USA only</li>
-          </ul>
-        </section>
+      <div class="card">
+        <!-- Item Start -->
+        <div class="job-listing">
+          <img src="/images/myhome.svg" alt="myhome logo" />
+          <section class="info">
+            <h1>MyHome</h1>
+            <h2>Junior Frontend Developer</h2>
+            <ul>
+              <li>5d ago</li>
+              <li>Contract</li>
+              <li>USA only</li>
+            </ul>
+          </section>
+        </div>
+        <div class="tags-container">
+          <!-- Role -->
+          <span class="tag">Frontend</span>
+          <!-- Level -->
+          <span class="tag">Junior</span>
+          <!-- Languages -->
+          <span class="tag">CSS</span>
+          <span class="tag">JavaScript</span>
+        </div>
+        <!-- Item End -->
       </div>
-      <div class="tags-container">
-        <!-- Role -->
-        <span class="tag">Frontend</span>
-        <!-- Level -->
-        <span class="tag">Junior</span>
-        <!-- Languages -->
-        <span class="tag">React</span>
-        <!-- Tools -->
-        <span class="tag">Sass</span>
-        <span class="tag">JavaScript</span>
+      <div class="card">
+        <!-- Item Start -->
+        <div class="job-listing">
+          <img src="/images/loop-studios.svg" alt="loop studios logo" />
+          <section class="info">
+            <h1>Loop Studios</h1>
+            <h2>Software Engineer</h2>
+            <ul>
+              <li>1w ago</li>
+              <li>Full Time</li>
+              <li>Worldwide</li>
+            </ul>
+          </section>
+        </div>
+        <div class="tags-container">
+          <!-- Role -->
+          <span class="tag">Fullstack</span>
+          <!-- Level -->
+          <span class="tag">Midweight</span>
+          <!-- Languages -->
+          <span class="tag">JavaScript</span>
+          <span class="tag">Ruby</span>
+          <!-- Tools -->
+          <span class="tag">Sass</span>
+        </div>
+        <!-- Item End -->
       </div>
-      <!-- Item End -->
-    </div>
-    <div class="card">
-      <!-- Item Start -->
-      <div class="job-listing">
-        <img src="/images/myhome.svg" alt="myhome logo">
-        <section class="info">
-          <h1>MyHome</h1>
-          <h2>Junior Frontend Developer</h2>
-          <ul>
-            <li>5d ago</li>
-            <li>Contract</li>
-            <li>USA only</li>
-          </ul>
-        </section>
+      <div class="card">
+        <!-- Item Start -->
+        <div class="job-listing">
+          <img src="/images/faceit.svg" alt="faceit logo" />
+          <section class="info">
+            <h1>FaceIt</h1>
+            <h2>Junior Backend Developer</h2>
+            <ul>
+              <li>2w ago</li>
+              <li>Full Time</li>
+              <li>UK only</li>
+            </ul>
+          </section>
+        </div>
+        <div class="tags-container">
+          <!-- Role -->
+          <span class="tag">Backend</span>
+          <!-- Level -->
+          <span class="tag">Junior</span>
+          <!-- Languages -->
+          <span class="tag">Ruby</span>
+          <!-- Tools -->
+          <span class="tag">RoR</span>
+        </div>
+        <!-- Item End -->
       </div>
-      <div class="tags-container">
-        <!-- Role -->
-        <span class="tag">Frontend</span>
-        <!-- Level -->
-        <span class="tag">Junior</span>
-        <!-- Languages -->
-        <span class="tag">CSS</span>
-        <span class="tag">JavaScript</span>
+      <div class="card">
+        <!-- Item Start -->
+        <div class="job-listing">
+          <img src="/images/shortly.svg" alt="shortly logo" />
+          <section class="info">
+            <h1>Shortly</h1>
+            <h2>Junior Developer</h2>
+            <ul>
+              <li>2w ago</li>
+              <li>Full Time</li>
+              <li>Worldwide</li>
+            </ul>
+          </section>
+        </div>
+        <div class="tags-container">
+          <!-- Role -->
+          <span class="tag">Frontend</span>
+          <!-- Level -->
+          <span class="tag">Junior</span>
+          <!-- Languages -->
+          <span class="tag">HTML</span>
+          <span class="tag">JavaScript</span>
+          <!-- Tools -->
+          <span class="tag">Sass</span>
+        </div>
+        <!-- Item End -->
       </div>
-      <!-- Item End -->
-    </div>
-    <div class="card">
-      <!-- Item Start -->
-      <div class="job-listing">
-        <img src="/images/loop-studios.svg" alt="loop studios logo">
-        <section class="info">
-          <h1>Loop Studios</h1>
-          <h2>Software Engineer</h2>
-          <ul>
-            <li>1w ago</li>
-            <li>Full Time</li>
-            <li>Worldwide</li>
-          </ul>
-        </section>
+      <div class="card">
+        <!-- Item Start -->
+        <div class="job-listing">
+          <img src="/images/insure.svg" alt="insure logo" />
+          <section class="info">
+            <h1>Insure</h1>
+            <h2>Junior Frontend Developer</h2>
+            <ul>
+              <li>2w ago</li>
+              <li>Full Time</li>
+              <li>USA only</li>
+            </ul>
+          </section>
+        </div>
+        <div class="tags-container">
+          <!-- Role -->
+          <span class="tag">Frontend</span>
+          <!-- Level -->
+          <span class="tag">Junior</span>
+          <!-- Languages -->
+          <span class="tag">JavaScript</span>
+          <!-- Tools -->
+          <span class="tag">Vue</span>
+          <span class="tag">Sass</span>
+        </div>
+        <!-- Item End -->
       </div>
-      <div class="tags-container">
-        <!-- Role -->
-        <span class="tag">Fullstack</span>
-        <!-- Level -->
-        <span class="tag">Midweight</span>
-        <!-- Languages -->
-        <span class="tag">JavaScript</span>
-        <span class="tag">Ruby</span>
-        <!-- Tools -->
-        <span class="tag">Sass</span>
+      <div class="card">
+        <!-- Item Start -->
+        <div class="job-listing">
+          <img src="/images/eyecam-co.svg" alt="eyecam logo" />
+          <section class="info">
+            <h1>Eyecam Co.</h1>
+            <h2>Full Stack Engineer</h2>
+            <ul>
+              <li>3w ago</li>
+              <li>Full Time</li>
+              <li>Worldwide</li>
+            </ul>
+          </section>
+        </div>
+        <div class="tags-container">
+          <!-- Role -->
+          <span class="tag">Fullstack</span>
+          <!-- Level -->
+          <span class="tag">Midweight</span>
+          <!-- Languages -->
+          <span class="tag">JavaScript</span>
+          <span class="tag">Python</span>
+          <!-- Tools -->
+          <span class="tag">Django</span>
+        </div>
+        <!-- Item End -->
       </div>
-      <!-- Item End -->
-    </div>
-    <div class="card">
-      <!-- Item Start -->
-      <div class="job-listing">
-        <img src="/images/faceit.svg" alt="faceit logo">
-        <section class="info">
-          <h1>FaceIt</h1>
-          <h2>Junior Backend Developer</h2>
-          <ul>
-            <li>2w ago</li>
-            <li>Full Time</li>
-            <li>UK only</li>
-          </ul>
-        </section>
+      <div class="card">
+        <!-- Item Start -->
+        <div class="job-listing">
+          <img
+            src="/images/the-air-filter-company.svg"
+            alt="air filter company logo"
+          />
+          <section class="info">
+            <h1>The Air Filter Company</h1>
+            <h2>Front-end Dev</h2>
+            <ul>
+              <li>1mo ago</li>
+              <li>Part Time</li>
+              <li>Worldwide</li>
+            </ul>
+          </section>
+        </div>
+        <div class="tags-container">
+          <!-- Role -->
+          <span class="tag">Frontend</span>
+          <!-- Level -->
+          <span class="tag">Junior</span>
+          <!-- Languages -->
+          <span class="tag">JavaScript</span>
+          <!-- Tools -->
+          <span class="tag">React</span>
+          <span class="tag">Sass</span>
+        </div>
+        <!-- Item End -->
       </div>
-      <div class="tags-container">
-        <!-- Role -->
-        <span class="tag">Backend</span>
-        <!-- Level -->
-        <span class="tag">Junior</span>
-        <!-- Languages -->
-        <span class="tag">Ruby</span>
-        <!-- Tools -->
-        <span class="tag">RoR</span>
+    </main>
+    <footer>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Juan Pablo Torres</a>.
       </div>
-      <!-- Item End -->
-    </div>
-    <div class="card">
-      <!-- Item Start -->
-      <div class="job-listing">
-        <img src="/images/shortly.svg" alt="shortly logo">
-        <section class="info">
-          <h1>Shortly</h1>
-          <h2>Junior Developer</h2>
-          <ul>
-            <li>2w ago</li>
-            <li>Full Time</li>
-            <li>Worldwide</li>
-          </ul>
-        </section>
-      </div>
-      <div class="tags-container">
-        <!-- Role -->
-        <span class="tag">Frontend</span>
-        <!-- Level -->
-        <span class="tag">Junior</span>
-        <!-- Languages -->
-        <span class="tag">HTML</span>
-        <span class="tag">JavaScript</span>
-        <!-- Tools -->
-        <span class="tag">Sass</span>
-      </div>
-      <!-- Item End -->
-    </div>
-    <div class="card">
-      <!-- Item Start -->
-      <div class="job-listing">
-        <img src="/images/insure.svg" alt="insure logo">
-        <section class="info">
-          <h1>Insure</h1>
-          <h2>Junior Frontend Developer</h2>
-          <ul>
-            <li>2w ago</li>
-            <li>Full Time</li>
-            <li>USA only</li>
-          </ul>
-        </section>
-      </div>
-      <div class="tags-container">
-        <!-- Role -->
-        <span class="tag">Frontend</span>
-        <!-- Level -->
-        <span class="tag">Junior</span>
-        <!-- Languages -->
-        <span class="tag">JavaScript</span>
-        <!-- Tools -->
-        <span class="tag">Vue</span>
-        <span class="tag">Sass</span>
-      </div>
-      <!-- Item End -->
-    </div>
-    <div class="card">
-      <!-- Item Start -->
-      <div class="job-listing">
-        <img src="/images/eyecam-co.svg" alt="eyecam logo">
-        <section class="info">
-          <h1>Eyecam Co.</h1>
-          <h2>Full Stack Engineer</h2>
-          <ul>
-            <li>3w ago</li>
-            <li>Full Time</li>
-            <li>Worldwide</li>
-          </ul>
-        </section>
-      </div>
-      <div class="tags-container">
-        <!-- Role -->
-        <span class="tag">Fullstack</span>
-        <!-- Level -->
-        <span class="tag">Midweight</span>
-        <!-- Languages -->
-        <span class="tag">JavaScript</span>
-        <span class="tag">Python</span>
-        <!-- Tools -->
-        <span class="tag">Django</span>
-      </div>
-      <!-- Item End -->
-    </div>
-    <div class="card">
-      <!-- Item Start -->
-      <div class="job-listing">
-        <img src="/images/the-air-filter-company.svg" alt="air filter company logo">
-        <section class="info">
-          <h1>The Air Filter Company</h1>
-          <h2>Front-end Dev</h2>
-          <ul>
-            <li>1mo ago</li>
-            <li>Part Time</li>
-            <li>Worldwide</li>
-          </ul>
-        </section>
-      </div>
-      <div class="tags-container">
-        <!-- Role -->
-        <span class="tag">Frontend</span>
-        <!-- Level -->
-        <span class="tag">Junior</span>
-        <!-- Languages -->
-        <span class="tag">JavaScript</span>
-        <!-- Tools -->
-        <span class="tag">React</span>
-        <span class="tag">Sass</span>
-      </div>
-      <!-- Item End -->
-    </div>
-  </main>
-  <footer>
-    <div class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-      Coded by <a href="#">Juan Pablo Torres</a>.
-    </div>
-  </footer>
-</body>
+    </footer>
+  </body>
 </html>
