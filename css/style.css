@@ -68,7 +68,7 @@ main {
   background-color: #fff;
   margin-bottom: 3.5em;
   border-radius: 5px;
-  box-shadow: .5em .5em 2em rgba(0,0,0,.1)
+  box-shadow: .5em .5em 2em rgba(0,0,0,.1);
 }
 
 .tag {
@@ -78,7 +78,7 @@ main {
   font-family: var(--ff-accent);
   font-weight: 500;
   color: var(--clr-primary);
-  padding: .3em .5em;
+  padding: .5em .5em .3em;
 }
 /* ===============
     Filter window
@@ -118,6 +118,11 @@ main {
   padding: 0em .5em;
   border-bottom-right-radius: 5px;
   border-top-right-radius: 5px;
+  cursor: pointer;
+}
+
+.filter button:hover, .filter button:focus, .filter button:active {
+  background-color: var(--clr-darker);
 }
 
 .filter button > i {
@@ -131,6 +136,12 @@ main {
   font-size: 13px;
   font-weight: 600;
   font-family: var(--ff-accent);
+  cursor: pointer;
+}
+
+.filter-window button:hover, .filter-window button:focus, .filter-window button:active {
+  color: var(--clr-primary);
+  text-decoration: underline;
 }
 
 /* =====
@@ -192,6 +203,11 @@ main {
 .card h2 {
   margin-top: .4em;
   font-size: 17px;
+  cursor: pointer;
+}
+
+.card h2:hover, .card h2:focus, .card h2:active {
+  color: var(--clr-primary);
 }
 
 /* Role info */
@@ -226,6 +242,11 @@ main {
 
 .category {
   margin: .3em 1.2em 1em 0;
+}
+
+.category:hover, .category:focus, .category:active {
+  color: #fff;
+  background-color: var(--clr-primary);
 }
 
 /* Cards complexity */
