@@ -52,7 +52,7 @@ body {
 
 header {
   background-color: var(--clr-primary);
-  margin-bottom: -6em;
+  /* margin-bottom: -6em; Add this back with JS*/
 }
 
 header img {
@@ -69,6 +69,7 @@ main {
   margin-bottom: 3.5em;
   border-radius: 5px;
   box-shadow: .5em .5em 2em rgba(0,0,0,.1);
+  display: none;
 }
 
 .tag {
@@ -80,6 +81,20 @@ main {
   color: var(--clr-primary);
   padding: .5em .5em .3em;
 }
+
+.filter {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.show-filter {
+  display: flex;
+}
+
+
 /* ===============
     Filter window
    ===============*/
@@ -87,7 +102,6 @@ main {
 .filter-window {
   position: relative;
   padding: 1.5em;
-  display: flex;
   justify-content: space-between;
   z-index: 1;
   top: 0em;
@@ -102,7 +116,6 @@ main {
 }
 
 .filter {
-  display: flex;
   margin: 1em 1em 0 0;
 }
 
