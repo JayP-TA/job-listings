@@ -90,7 +90,7 @@ main {
   display: block;
 }
 
-.show-filter {
+.show-filter-window {
   display: flex;
 }
 
@@ -266,7 +266,7 @@ main {
 
 @media (min-width: 53em) {
   .card {
-    display: flex;
+    display: none;
     justify-content: space-between;
     align-items: center;
     padding: 1em 2em 1em 1em;
@@ -305,8 +305,11 @@ main {
     margin: 1em 0 1em 1em;
     cursor: pointer;
   }
-}
 
+  .show {
+    display: flex;
+  }
+}
 
 .attribution {
   font-size: 11px;
