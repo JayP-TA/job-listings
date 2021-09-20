@@ -43,78 +43,78 @@
       />
     </header>
     <main>
-      <div class="container filter-window">
+      <div class="container filter-window" id="filter-window">
         <div class="filters-container">
           <!--Roles-->
-          <div class="filter">
+          <div class="filter Frontend">
             <span class="tag">Frontend</span
             ><button><i class="fas fa-times"></i></button>
           </div>
-          <div class="filter">
+          <div class="filter Backend">
             <span class="tag">Backend</span
             ><button><i class="fas fa-times"></i></button>
           </div>
-          <div class="filter">
+          <div class="filter Fullstack>
             <span class="tag">Fullstack</span
             ><button><i class="fas fa-times"></i></button>
           </div>
           <!--Level-->
-          <div class="filter">
+          <div class="filter Senior">
             <span class="tag">Senior</span
             ><button><i class="fas fa-times"></i></button>
           </div>
-          <div class="filter">
+          <div class="filter Midweight">
             <span class="tag">Midweight</span
             ><button><i class="fas fa-times"></i></button>
           </div>
-          <div class="filter">
+          <div class="filter Junior">
             <span class="tag">Junior</span
             ><button><i class="fas fa-times"></i></button>
           </div>
           <!--Languages-->
-          <div class="filter">
+          <div class="filter CSS">
             <span class="tag">CSS</span
             ><button><i class="fas fa-times"></i></button>
           </div>
-          <div class="filter">
+          <div class="filter JavaScript">
             <span class="tag">JavaScript</span
             ><button><i class="fas fa-times"></i></button>
           </div>
-          <div class="filter">
+          <div class="filter HTML">
             <span class="tag">HTML</span
             ><button><i class="fas fa-times"></i></button>
           </div>
-          <div class="filter">
+          <div class="filter Python">
             <span class="tag">Python</span
             ><button><i class="fas fa-times"></i></button>
           </div>
-          <div class="filter">
+          <div class="filter Ruby">
             <span class="tag">Ruby</span
             ><button><i class="fas fa-times"></i></button>
           </div>
           <!--Tools-->
-          <div class="filter">
+          <div class="filter Django">
             <span class="tag">Django</span
             ><button><i class="fas fa-times"></i></button>
           </div>
-          <div class="filter">
+          <div class="filter Sass">
             <span class="tag">Sass</span
             ><button><i class="fas fa-times"></i></button>
           </div>
-          <div class="filter">
+          <div class="filter Vue">
             <span class="tag">Vue</span
             ><button><i class="fas fa-times"></i></button>
           </div>
-          <div class="filter">
+          <div class="filter RoR">
             <span class="tag">RoR</span
             ><button><i class="fas fa-times"></i></button>
           </div>
-          <div class="filter">
+          <div class="filter React">
             <span class="tag">React</span
             ><button><i class="fas fa-times"></i></button>
           </div>
         </div>
-        <button id="clear">Clear</button>
+        <button id="clear" onclick="clearFilters()">Clear</button>
       </div>
       <div
         class="container card featured Frontend Senior HTML CSS JavaScript"
@@ -136,13 +136,13 @@
         </div>
         <div class="tags-container">
           <!-- Role -->
-          <button class="category tag">Frontend</button>
+          <button class="category tag" onclick="displayFilters('Frontend'), filterListings('Frontend')">Frontend</button>
           <!-- Level -->
-          <button class="category tag">Senior</button>
+          <button class="category tag" onclick="displayFilters('Senior'), filterListings('Senior')">Senior</button>
           <!-- Languages -->
-          <button class="category tag">HTML</button>
-          <button class="category tag">CSS</button>
-          <button class="category tag">JavaScript</button>
+          <button class="category tag" onclick="displayFilters('HTML'), filterListings('HTML')">HTML</button>
+          <button class="category tag" onclick="displayFilters('CSS'), filterListings('CSS')">CSS</button>
+          <button class="category tag" onclick="displayFilters('JavaScript'), filterListings('JavaScript')">JavaScript</button>
         </div>
         <!-- Item End -->
       </div>
@@ -166,13 +166,13 @@
         </div>
         <div class="tags-container">
           <!-- Role -->
-          <button class="category tag">Fullstack</button>
+          <button class="category tag" onclick="displayFilters('Fullstack'), filterListings('Fullstack')">Fullstack</button>
           <!-- Level -->
-          <button class="category tag">Midweight</button>
+          <button class="category tag" onclick="displayFilters('Midweight'), filterListings('Midweight')">Midweight</button>
           <!-- Languages -->
-          <button class="category tag">Python</button>
+          <button class="category tag" onclick="displayFilters('Python'), filterListings('Python')">Python</button>
           <!-- Tools -->
-          <button class="category tag">React</button>
+          <button class="category tag" onclick="displayFilters('React'), filterListings('React')">React</button>
         </div>
         <!-- Item End -->
       </div>
@@ -193,14 +193,14 @@
         </div>
         <div class="tags-container">
           <!-- Role -->
-          <button class="category tag">Frontend</button>
+          <button class="category tag" onclick="displayFilters('Frontend'), filterListings('Frontend')">Frontend</button>
           <!-- Level -->
-          <button class="category tag">Junior</button>
+          <button class="category tag" onclick="displayFilters('Junior'), filterListings('Junior')">Junior</button>
           <!-- Languages -->
-          <button class="category tag">React</button>
+          <button class="category tag" onclick="displayFilters('React'), filterListings('React')">React</button>
           <!-- Tools -->
-          <button class="category tag">Sass</button>
-          <button class="category tag">JavaScript</button>
+          <button class="category tag" onclick="displayFilters('Sass'), filterListings('Sass')">Sass</button>
+          <button class="category tag" onclick="displayFilters('JavaScript'), filterListings('JavaScript')">JavaScript</button>
         </div>
         <!-- Item End -->
       </div>
@@ -220,12 +220,12 @@
         </div>
         <div class="tags-container">
           <!-- Role -->
-          <button class="category tag">Frontend</button>
+          <button class="category tag" onclick="displayFilters('Frontend'), filterListings('Frontend')">Frontend</button>
           <!-- Level -->
-          <button class="category tag">Junior</button>
+          <button class="category tag" onclick="displayFilters('Junior'), filterListings('Junior')">Junior</button>
           <!-- Languages -->
-          <button class="category tag">CSS</button>
-          <button class="category tag">JavaScript</button>
+          <button class="category tag" onclick="displayFilters('CSS'), filterListings('CSS')">CSS</button>
+          <button class="category tag" onclick="displayFilters('JavaScript'), filterListings('JavaScript')">JavaScript</button>
         </div>
         <!-- Item End -->
       </div>
@@ -245,14 +245,14 @@
         </div>
         <div class="tags-container">
           <!-- Role -->
-          <button class="category tag">Fullstack</button>
+          <button class="category tag" onclick="displayFilters('Fullstack'), filterListings('Fullstack')">Fullstack</button>
           <!-- Level -->
-          <button class="category tag">Midweight</button>
+          <button class="category tag" onclick="displayFilters('Midweight'), filterListings('Midweight')">Midweight</button>
           <!-- Languages -->
-          <button class="category tag">JavaScript</button>
-          <button class="category tag">Ruby</button>
+          <button class="category tag" onclick="displayFilters('JavaScript'), filterListings('JavaScript')">JavaScript</button>
+          <button class="category tag" onclick="displayFilters('Ruby'), filterListings('Ruby')">Ruby</button>
           <!-- Tools -->
-          <button class="category tag">Sass</button>
+          <button class="category tag" onclick="displayFilters('Sass'), filterListings('Sass')">Sass</button>
         </div>
         <!-- Item End -->
       </div>
@@ -272,13 +272,13 @@
         </div>
         <div class="tags-container">
           <!-- Role -->
-          <button class="category tag">Backend</button>
+          <button class="category tag" onclick="displayFilters('Backend'), filterListings('Backend')">Backend</button>
           <!-- Level -->
-          <button class="category tag">Junior</button>
+          <button class="category tag" onclick="displayFilters('Junior'), filterListings('Junior')">Junior</button>
           <!-- Languages -->
-          <button class="category tag">Ruby</button>
+          <button class="category tag" onclick="displayFilters('Ruby'), filterListings('Ruby')">Ruby</button>
           <!-- Tools -->
-          <button class="category tag">RoR</button>
+          <button class="category tag" onclick="displayFilters('RoR'), filterListings('RoR')">RoR</button>
         </div>
         <!-- Item End -->
       </div>
@@ -298,14 +298,14 @@
         </div>
         <div class="tags-container">
           <!-- Role -->
-          <button class="category tag">Frontend</button>
+          <button class="category tag" onclick="displayFilters('Frontend'), filterListings('Frontend')">Frontend</button>
           <!-- Level -->
-          <button class="category tag">Junior</button>
+          <button class="category tag" onclick="displayFilters('Junior'), filterListings('Junior')">Junior</button>
           <!-- Languages -->
-          <button class="category tag">HTML</button>
-          <button class="category tag">JavaScript</button>
+          <button class="category tag" onclick="displayFilters('HTML'), filterListings('HTML')">HTML</button>
+          <button class="category tag" onclick="displayFilters('JavaScript'), filterListings('JavaScript')">JavaScript</button>
           <!-- Tools -->
-          <button class="category tag">Sass</button>
+          <button class="category tag" onclick="displayFilters('Sass'), filterListings('Sass')">Sass</button>
         </div>
         <!-- Item End -->
       </div>
@@ -325,14 +325,14 @@
         </div>
         <div class="tags-container">
           <!-- Role -->
-          <button class="category tag">Frontend</button>
+          <button class="category tag" onclick="displayFilters('Frontend'), filterListings('Frontend')">Frontend</button>
           <!-- Level -->
-          <button class="category tag">Junior</button>
+          <button class="category tag" onclick="displayFilters('Junior'), filterListings('Junior')">Junior</button>
           <!-- Languages -->
-          <button class="category tag">JavaScript</button>
+          <button class="category tag" onclick="displayFilters('JavaScript'), filterListings('JavaScript')">JavaScript</button>
           <!-- Tools -->
-          <button class="category tag">Vue</button>
-          <button class="category tag">Sass</button>
+          <button class="category tag" onclick="displayFilters('Vue'), filterListings('Vue')">Vue</button>
+          <button class="category tag" onclick="displayFilters('Sass'), filterListings('Sass')">Sass</button>
         </div>
         <!-- Item End -->
       </div>
@@ -354,14 +354,14 @@
         </div>
         <div class="tags-container">
           <!-- Role -->
-          <button class="category tag">Fullstack</button>
+          <button class="category tag" onclick="displayFilters('Fullstack'), filterListings('Fullstack')">Fullstack</button>
           <!-- Level -->
-          <button class="category tag">Midweight</button>
+          <button class="category tag" onclick="displayFilters('Midweight'), filterListings('Midweight')">Midweight</button>
           <!-- Languages -->
-          <button class="category tag">JavaScript</button>
-          <button class="category tag">Python</button>
+          <button class="category tag" onclick="displayFilters('JavaScript'), filterListings('JavaScript')">JavaScript</button>
+          <button class="category tag" onclick="displayFilters('Python'), filterListings('Python')">Python</button>
           <!-- Tools -->
-          <button class="category tag">Django</button>
+          <button class="category tag" onclick="displayFilters('Django'), filterListings('Django')">Django</button>
         </div>
         <!-- Item End -->
       </div>
@@ -384,14 +384,14 @@
         </div>
         <div class="tags-container">
           <!-- Role -->
-          <button class="category tag">Frontend</button>
+          <button class="category tag" onclick="displayFilters('Frontend'), filterListings('Frontend')">Frontend</button>
           <!-- Level -->
-          <button class="category tag">Junior</button>
+          <button class="category tag" onclick="displayFilters('Junior'), filterListings('Junior')">Junior</button>
           <!-- Languages -->
-          <button class="category tag">JavaScript</button>
+          <button class="category tag" onclick="displayFilters('JavaScript'), filterListings('JavaScript')">JavaScript</button>
           <!-- Tools -->
-          <button class="category tag">React</button>
-          <button class="category tag">Sass</button>
+          <button class="category tag" onclick="displayFilters('React'), filterListings('React')">React</button>
+          <button class="category tag" onclick="displayFilters('Sass'), filterListings('Sass')">Sass</button>
         </div>
         <!-- Item End -->
       </div>
