@@ -52,10 +52,16 @@ function removeClass (element, name) {
 };
 
 function removeFilter (filterToRemove) {
-    filters.filter(x => x !== filterToRemove);
+    filters = filters.filter(x => x !== filterToRemove);
+    showCards();
+    filterCards(filters);
+    displayFilters(filters);
+    if (filters.length === 0) {
+        clearFilters();
+    }
 }
 
-function clearFilters () {1
+function clearFilters () {
     filters = [];
     showCards();
     hideFilters();
