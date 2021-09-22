@@ -134,7 +134,7 @@ main {
   cursor: pointer;
 }
 
-.filter button:hover, .filter button:focus, .filter button:active {
+.filter button:hove.filter button:active {
   background-color: var(--clr-darker);
 }
 
@@ -152,7 +152,7 @@ main {
   cursor: pointer;
 }
 
-.filter-window button:hover, .filter-window button:focus, .filter-window button:active {
+.filter-window button:hover, .filter-window button:active {
   color: var(--clr-primary);
   text-decoration: underline;
 }
@@ -219,7 +219,7 @@ main {
   cursor: pointer;
 }
 
-.card h2:hover, .card h2:focus, .card h2:active {
+.card h2:hove.card h2:active {
   color: var(--clr-primary);
 }
 
@@ -257,7 +257,7 @@ main {
   margin: .3em 1.2em 1em 0;
 }
 
-.category:hover, .category:focus, .category:active {
+.category.category:active {
   color: #fff;
   background-color: var(--clr-primary);
 }
