@@ -1,15 +1,32 @@
-filterListings("all");
+let filters = [];
+showCards();
 
-function filterListings (c) {
+function filterListings(c) {
+        if (filters.indexOf(c) == -1) filters.push(c);
+        filterCards(filters);
+        displayFilters(filters);
+}
+
+function filterCards () {
     var cards, i;
     cards = document.getElementsByClassName("card");
-    if (c == "all") c = "";
+    hideCards();
     for (i = 0; i < cards.length; i++) {
-        removeClass(cards[i], "show");
-        if (cards[i].className.indexOf(c) > -1) addClass(cards[i], "show");
+        if (filters.every(category => cards[i].className.includes(category))) addClass(cards[i], "show");
     }
 }
 
+function displayFilters () {
+    var window, filterButtons, i, filter;
+    window = document.getElementById('filter-window');
+    filterButtons = document.getElementsByClassName("filter");
+    addClass(window, 'show-filters');
+    for (i = 0; i < filterButtons.length; i++) {
+        removeClass(filterButtons[i], "show-filters");
+        for (filter of filters) {
+            if (filterButtons[i].className.indexOf(filter) > -1) addClass(filterButtons[i], "show-filters");}
+        }
+}
 
 function addClass (element, name) {
     var i, classes, newClass;
@@ -34,21 +51,38 @@ function removeClass (element, name) {
     element.className = classes.join(" ");
 };
 
-function displayFilters (c) {
-    var window, filters, i;
-    window = document.getElementById('filter-window');
-    filters = document.getElementsByClassName("filter");
-    addClass(window, 'show-filter-window');
-    if (c == "all") c = "";
-    for (i = 0; i < filters.length; i++) {
-        removeClass(filters[i], "show");
-        if (filters[i].className.indexOf(c) > -1) addClass(filters[i], "show");
+function removeFilter (filterToRemove) {
+    filters.filter(x => x !== filterToRemove);
+}
+
+function clearFilters () {1
+    filters = [];
+    showCards();
+    hideFilters();
+}
+
+function showCards () {
+    var i, cards;
+    cards = document.getElementsByClassName("card");
+    for (i = 0; i < cards.length; i++) {
+        addClass(cards[i], "show");
     }
 }
 
-function clearFilters () {
-    var window = document.getElementById('filter-window');
-    filterListings("all");
-    displayFilters('all');
-    removeClass(window, 'show-filter-window');
+function hideCards () {
+    var i, cards;
+    cards = document.getElementsByClassName("card");
+    for (i = 0; i < cards.length; i++) {
+        removeClass(cards[i], "show");
+    }
+}
+
+function hideFilters () {
+    var i, filterButtons, window;
+    filterButtons = document.getElementsByClassName("filter");
+    window = document.getElementById('filter-window');
+    removeClass(window,"show-filters")
+    for (i = 0; i < filterButtons.length; i++) {
+        removeClass(filterButtons[i], "show-filters");
+    }
 }
